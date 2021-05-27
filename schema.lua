@@ -1,5 +1,5 @@
 
--- TODO: configurable
+-- TODO: configurable via json
 local username = "BuckarooBanzai"
 local schemaname = "default_landscape"
 

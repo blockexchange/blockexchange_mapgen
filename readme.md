@@ -11,8 +11,7 @@ to the world-coordinates `0,0,0`
 
 # Issues
 
-* Placeholders don't get removed when they should
-* Temporary lighting weirdness
+* Lighting weirdness because some mapblocks are loaded top-down
 
 # License
 
