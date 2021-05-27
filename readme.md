@@ -5,7 +5,14 @@ minetest blockexchange mapgen mod
 
 # Overview
 
-WIP Project
+Experimental `blockexchange` mapgen loader.
+Loads the schematic here: https://blockexchange.minetest.land/#/schema/BuckarooBanzai/default_landscape
+to the world-coordinates `0,0,0`
+
+# Issues
+
+* Placeholders don't get removed when they should
+* Temporary lighting weirdness
 
 # License
 
