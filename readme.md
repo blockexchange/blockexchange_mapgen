@@ -9,10 +9,6 @@ Experimental `blockexchange` mapgen loader.
 Loads the schematic here: https://blockexchange.minetest.land/#/schema/BuckarooBanzai/default_landscape
 to the world-coordinates `0,0,0`
 
-# Issues
-
-* Lighting weirdness because some mapblocks are loaded top-down
-
 # License
 
 * Code: MIT

@@ -25,7 +25,7 @@ local function download_chunk(chunk_pos)
         minetest.log("action", "[bx_mapgen] got schemaparts: " .. #schemaparts)
 
         for _, schemapart in ipairs(schemaparts) do
-            blockexchange.place_schemapart(schemapart, origin)
+            blockexchange.place_schemapart(schemapart, origin, false)
         end
     end)
 end
