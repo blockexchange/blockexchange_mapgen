@@ -32,8 +32,7 @@ end
 
 local in_transit_chunks = {}
 
-function blockexchange_mapgen.load_mapblock(mapblock_pos)
-    local chunk_pos = blockexchange_mapgen.get_chunkpos_from_mapblock(mapblock_pos)
+function blockexchange_mapgen.load_chunk(chunk_pos)
     local hash = minetest.hash_node_position(chunk_pos)
     if not in_transit_chunks[hash] then
         download_chunk(chunk_pos)
