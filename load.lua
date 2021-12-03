@@ -10,12 +10,12 @@ local function download_chunk(chunk_pos)
         return
     end
 
-    if pos.x > origin.x + blockexchange_mapgen.schema.size_x_plus or
-        pos.y > origin.y + blockexchange_mapgen.schema.size_y_plus or
-        pos.z > origin.z + blockexchange_mapgen.schema.size_z_plus or
-        pos.x < origin.x - blockexchange_mapgen.schema.size_x_minus or
-        pos.y < origin.y - blockexchange_mapgen.schema.size_y_minus or
-        pos.z < origin.z - blockexchange_mapgen.schema.size_z_minus then
+    if pos.x > origin.x + blockexchange_mapgen.schema.size_x or
+        pos.y > origin.y + blockexchange_mapgen.schema.size_y or
+        pos.z > origin.z + blockexchange_mapgen.schema.size_z or
+        pos.x < origin.x or
+        pos.y < origin.y or
+        pos.z < origin.z then
             -- out of schema area, skip
             return
     end
