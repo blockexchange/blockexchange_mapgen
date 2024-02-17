@@ -21,7 +21,7 @@ local function download_chunk(chunk_pos)
     end
 
     minetest.log("action", "[bx_mapgen] downloading chunk @ " .. minetest.pos_to_string(pos))
-    blockexchange.api.get_schemapart_chunk(blockexchange_mapgen.schema.id, pos):next(function(schemaparts)
+    blockexchange.api.get_schemapart_chunk(blockexchange_mapgen.schema.uid, pos):next(function(schemaparts)
         minetest.log("action", "[bx_mapgen] got schemaparts: " .. #schemaparts)
 
         for _, schemapart in ipairs(schemaparts) do
